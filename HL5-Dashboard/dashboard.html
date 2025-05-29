@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard</title>
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+               <div class="header">
+    <a class="logout-link" href="./login/login.html" data-toggle="modal" data-target="#logoutModal">
+        <i class="fas fa-sign-out-alt mr-1"></i>Logout
+    </a>
+    <img class="login-logo" src="../images/logo.png" alt="logo">
+</div>
+                
+            <!-- Texto de bienvenida -->
+            <div class="container-fluid">
+                <div class="welcome-text">
+                    <h1>Bienvenido al Dashboard</h1>
+                    <p>Este es un panel de control de ejemplo. Aquí puedes ver diferentes gráficos y estadísticas.</p>
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Admin Dashboard</h1>
+                    <p class="mb-4">Bienvenido a la vista de Administrador <a
+                            target="_blank" href="">
+                            </a>.</p>
+
+                    <!-- Content Row -->
+                    <div class="row">
+
+                        <div class="col-xl-8 col-lg-7">
+
+                            <!-- Area Chart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Corriente</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="myAreaChart"></canvas>
+                                    </div>
+                                    <hr>
+                                    Styling for the area chart can be found in the
+                                    <code>/js/demo/chart-area-demo.js</code> file.
+                                </div>
+                            </div>
+
+                            <!-- Bar Chart -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Potencia</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-bar">
+                                        <canvas id="myBarChart"></canvas>
+                                    </div>
+                                    <hr>
+                                    Styling for the bar chart can be found in the
+                                    <code>/js/demo/chart-bar-demo.js</code> file.
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Donut Chart -->
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Información de Producción</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <p class="mb-4">El operador encargado de la producción es: <a
+                                        target="_blank" href="">
+                                        </a></p>
+                                    <hr>
+                                    <h1 class="titulo-naranja" id="operadorNombre">Esperando escaneo...</h1>
+
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Ladder 5olutions</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/chart-area-demo.js"></script>
+    <script src="js/chart-pie-demo.js"></script>
+    <script src="js/chart-bar-demo.js"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.5/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/05/09/00/20250509000831-4KCO2KLS.js"></script>
+<script>
+  
+    // Conéctate al WebSocket de Node-RED
+  const operadorElemento = document.getElementById('operadorNombre');
+
+  // Conéctate al WebSocket de Node-RED
+  const socket = new WebSocket('http://127.0.0.1:1880/ws/operador'); // Asegúrate de que esta IP es accesible
+
+  socket.onopen = () => {
+    console.log("✅ WebSocket conectado");
+  };
+
+  socket.onmessage = function (event) {
+    try {
+      const data = JSON.parse(event.data);
+      if (data.nombre) {
+        operadorElemento.textContent = 'Operador: ' + data.nombre;
+      } else {
+        operadorElemento.textContent = 'Operador: ---';
+      }
+    } catch (e) {
+      console.error("❌ Error al procesar mensaje:", e);
+    }
+  };
+
+  socket.onerror = function (err) {
+    console.error('❌ Error WebSocket:', err);
+    operadorElemento.textContent = 'Error de conexión con servidor.';
+  };
+</script>
+
+
+  
+</body>
+
+</html>
